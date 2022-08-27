@@ -21,11 +21,12 @@
 body {
      font-family: var(--main-font) 
     }
-    img{
+    img,
+    svg{
         display: block;
         max-width: 100%;
         height: auto;
-        width: 100%;
+        
     }
     .list {
         list-style: none;
