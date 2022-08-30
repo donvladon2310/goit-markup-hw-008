@@ -1,7 +1,11 @@
 .portfolio-list{
     margin-bottom: 30px;
-    margin-right: 30px;
     position: relative;
+    @media  screen and (min-width: 768px){  
+        width: calc((100% - 30px) / 2); 
+    }
+    @media  screen and (min-width: 1200px){
+        width: calc((100% - 60px) / 3) ;}
     &:nth-child(3n) {
         margin-right: 0;
         }
@@ -11,7 +15,9 @@
     } 
     .portfolio-img{
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap; 
+    gap: 30px; 
+    width: 100%;
     &-link{
         display: block;
         text-decoration: none; 
@@ -32,8 +38,7 @@
     &-wrap{
         position: relative;
         overflow: hidden;
-    }
-    }
+    }}
     .portfolio-item {
     font-style: normal;
     font-weight: 700;
