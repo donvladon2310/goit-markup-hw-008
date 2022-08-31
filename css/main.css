@@ -396,21 +396,40 @@ svg {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img17.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 204px;
+  }
+}
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 24px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 .hero__button {
   font-weight: 700;
@@ -479,7 +498,13 @@ svg {
 }
 
 .work {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 .work__item {
   margin-right: 30px;
@@ -508,6 +533,12 @@ svg {
 
 .section--no-pading-top {
   padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--no-pading-top {
+    display: flex;
+  }
 }
 
 .section__team--another-bg {

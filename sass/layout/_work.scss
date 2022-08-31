@@ -1,7 +1,11 @@
 
 
     .work{
-    display: flex;
+    display: none;
+    @media  screen and (min-width: 1200px){
+       display: flex;
+       margin-top: 50px;
+}
     
     
     &__item{
@@ -32,6 +36,11 @@
 
     .section--no-pading-top{
         padding-top: 0;
+        display: none;
+        @media  screen and (min-width: 1200px){
+            display: flex;
+            
+    }
     }
 
     
