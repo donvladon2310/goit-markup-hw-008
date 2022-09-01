@@ -8,15 +8,21 @@
     }
     .filter 
     {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content:center;
-    .item{   
-        margin-right: 8px;
-        &:last-child{
+    justify-content:start;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    @media  screen and (min-width: 768px){
+    justify-content: center;
+    margin-bottom: 30px;}
+    @media  screen and (min-width: 1200px){
+    justify-content: center; 
+    margin-bottom: 50px;
+         }
+    .item:last-child{
             margin-right: 0;
             }
-        }
         &-button {
             font-style: normal;
             font-weight: 500;

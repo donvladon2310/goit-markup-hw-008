@@ -1,11 +1,19 @@
 .navigation {
-    display: flex;
+    display: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-left: 93px;
+    @media  screen and (min-width: 768px){
+        display: flex;
+    align-items: baseline;}
+
+
+        @media  screen and (min-width: 1200px){
+            display: flex;
+    }
     .navigation__item {
         margin-right: 50px;
         &:last-child{

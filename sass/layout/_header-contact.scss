@@ -1,6 +1,17 @@
 .contact {
-    display: flex;
+    display: none;
     margin-left: auto;  
+    @media  screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 84px;
+        
+    }
+        @media  screen and (min-width: 1200px){
+           display: flex;
+           margin-left: auto;
+    }
     &__link {
         display: block;
         font-weight: 500;
@@ -15,6 +26,17 @@
         display: flex;
         align-items: center;
         transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        @media  screen and (min-width: 768px){
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 12px;
+        line-height: 1.17;
+        
+         }
+            @media  screen and (min-width: 1200px){
+               padding-top: 32px;
+               padding-bottom: 32px;
+        }
         &:hover,
         &:focus
     {
@@ -22,7 +44,10 @@
     }
         } 
         & .contact__item + .contact__item{
-            margin-left: 50px;
+            
+            @media  screen and (min-width: 1200px){
+                margin-left: 50px;
+         }
             }
             & .item:last-child{
             margin-right: 0;
@@ -34,6 +59,7 @@
         margin-right: 10px;
         align-items: center;  
         transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+       
         &:hover{
             fill: var(--accent-color); 
         }
