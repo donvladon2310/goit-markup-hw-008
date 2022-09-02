@@ -1,6 +1,7 @@
 .header {
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
+    
     @media  screen and (min-width: 480px){
         .container{
             display: flex;
@@ -31,4 +32,104 @@
 .modal-menu-open{
     width: 100%;
     fill: #000000;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal-menu-open:hover,
+.modal-menu-open:focus {
+    fill:var(--accent-color);
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    @media  screen and (min-width: 480px){
+        .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow: auto;
+        padding-left: 40px;
+
+        }}
+    
+}
+.menu-close {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 2px;  
+}
+
+.mob-menu-nav-item {
+
+margin-bottom: 32px;
+}
+
+.mob-menu-nav-link {
+    font-weight: 500;
+font-size: 40px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: #212121;
+    text-decoration: none;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.mob-menu-nav-link:hover,
+.mob-menu-nav-link:focus{
+    color:var(--accent-color);
+}
+.mob-menu-cont {
+    margin-bottom: 64px;
+}
+.mob-menu-cont-item {
+    margin-bottom: 32px;
+}
+.mob-menu-tel-link {
+    font-weight: 500;
+font-size: 34px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: #2196F3;
+
+text-decoration: none;
+}
+.mob-menu-post-link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    
+}
+.mob-menu-soc {
+    display: flex;
+    gap: 10px;
+}
+
+.mob-menu-soc-link {
+    font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: #2196F3;
+text-decoration: none;
+    
+}
+.i {
+    margin-right: 10px;
+    border: none;
+    transform: rotate(90deg);
+    color:rgba(33, 33, 33, 0.2)
+
 }
