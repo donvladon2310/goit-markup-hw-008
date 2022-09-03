@@ -4,7 +4,7 @@
     @media  screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 30px;
         margin-left: 84px;
         
     }
@@ -43,12 +43,7 @@
     color:var(--accent-color);
     }
         } 
-        & .contact__item + .contact__item{
-            
-            @media  screen and (min-width: 1200px){
-                margin-left: 50px;
-         }
-            }
+        
             & .item:last-child{
             margin-right: 0;
             }

@@ -1,5 +1,5 @@
 .portfolio-list{
-    margin-bottom: 30px;
+    
     position: relative;
     @media  screen and (min-width: 768px){  
         width: calc((100% - 30px) / 2); 
@@ -17,9 +17,11 @@
     display: flex;
     flex-wrap: wrap; 
     gap: 30px; 
-    width: 100%;
+    
     &-link{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         text-decoration: none; 
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         &:hover .portfolio-img-top-text
@@ -55,6 +57,7 @@
     color: var(--primary-grey-color);
     }
     .div-item-text {
+        flex-grow: 1;
     padding-top: 20px;
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;

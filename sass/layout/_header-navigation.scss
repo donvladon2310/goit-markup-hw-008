@@ -1,3 +1,4 @@
+
 .navigation {
     display: none;
     font-weight: 500;
@@ -5,7 +6,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    margin-left: 93px;
+    
     @media  screen and (min-width: 768px){
         display: flex;
     align-items: baseline;}
@@ -37,6 +38,7 @@
     }
     .navigation__link--current{
         position: relative;
+        color: var(--accent-color);
         &::after{
             content: '';
             position: absolute;
