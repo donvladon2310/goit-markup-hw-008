@@ -71,6 +71,14 @@ svg {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -334,6 +342,7 @@ svg {
 .menu {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .menu-open {
@@ -377,16 +386,11 @@ svg {
   top: 0;
   padding-top: 10px;
   padding-bottom: 48px;
+  transform: translateX(0s);
+  transition: transition 250ms linear;
 }
-@media screen and (min-width: 480px) {
-  .mob-menu .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    overflow: auto;
-    padding-left: 40px;
-  }
+.mob-menu.is-hidden {
+  transform: translateX(100%);
 }
 
 .menu-close {
@@ -690,6 +694,7 @@ svg {
 }
 
 .features__title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -698,7 +703,11 @@ svg {
   text-transform: uppercase;
   color: #212121;
 }
-
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
+}
 .features__text {
   font-size: 14px;
   line-height: 1.71;
@@ -789,12 +798,19 @@ svg {
 }
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
+  color: #212121;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 .team__name {
   font-weight: 500;
@@ -877,7 +893,6 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   color: #AFB1B8;
