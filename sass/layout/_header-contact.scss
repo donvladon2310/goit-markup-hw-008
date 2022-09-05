@@ -3,14 +3,17 @@
     margin-left: auto;  
     @media  screen and (min-width: 768px){
         display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-left: 84px;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
         
     }
         @media  screen and (min-width: 1200px){
            display: flex;
-           margin-left: auto;
+           flex-wrap: wrap;
+           flex-direction: row;
+           align-items: center;
+           gap: 30px;
     }
     &__link {
         display: block;

@@ -15,6 +15,7 @@
         .container{
             display: flex;
             align-items: baseline;
+            justify-content: unset;
         } 
              }
     &-nav{
@@ -113,12 +114,9 @@
                         }
                 }
                 &-subscribe{
-                    @media  screen and (min-width: 768px){
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
+                   
                     @media  screen and (min-width: 1200px){
-                        margin-left: 94px;
+                       margin-left: 94px;
                     }
                     &-title{
                         font-weight: 700;
@@ -234,6 +232,8 @@
            margin-left: 0;
            margin-right: 70px;
            text-align: start;
+           margin-bottom: 0;
+           flex-grow: 1;
            
                  }
         

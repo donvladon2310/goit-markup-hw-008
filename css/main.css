@@ -114,6 +114,7 @@ img {
   position: relative;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+  padding: 40px;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -138,11 +139,10 @@ img {
 .modal-titel {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
 }
 .modal-input {
   width: 100%;
@@ -247,10 +247,28 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 7px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 768px) {
+  .check-text {
+    font-size: 11px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 780px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .check-text span {
   display: flex;
@@ -296,7 +314,11 @@ img {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .menu__logo {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu__logo {
@@ -339,6 +361,7 @@ img {
 @media screen and (min-width: 480px) {
   .header .container {
     display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -395,12 +418,25 @@ img {
   left: 0%;
   padding-top: 10px;
   padding-bottom: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-left: 40px;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
 }
 .mob-menu.is-hidden {
   transform: translateX(0%);
@@ -510,6 +546,11 @@ img {
   color: rgba(33, 33, 33, 0.2);
 }
 
+.mob-menu-current {
+  position: relative;
+  color: var(--accent-color);
+}
+
 .navigation {
   display: none;
   font-weight: 500;
@@ -570,15 +611,18 @@ img {
 @media screen and (min-width: 768px) {
   .contact {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-left: 84px;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
-    margin-left: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
   }
 }
 .contact__link {
@@ -635,7 +679,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  padding: 118px 60px;
+  padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-img-tel-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -769,7 +813,6 @@ img {
 @media screen and (min-width: 1200px) {
   .work {
     display: flex;
-    margin-top: 50px;
   }
 }
 .work__item {
@@ -958,6 +1001,7 @@ img {
   .footer .container {
     display: flex;
     align-items: baseline;
+    justify-content: unset;
   }
 }
 .footer-nav {
@@ -1047,12 +1091,6 @@ img {
 }
 .footer-addres-contacts:hover, .footer-addres-contacts:focus {
   color: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .footer-subscribe {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
@@ -1175,6 +1213,8 @@ img {
     margin-left: 0;
     margin-right: 70px;
     text-align: start;
+    margin-bottom: 0;
+    flex-grow: 1;
   }
 }
 
